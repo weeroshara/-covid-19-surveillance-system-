@@ -1,0 +1,47 @@
+create table globalcovid
+(
+    covidDate date null,
+    conformed int  null,
+    recover   int  null,
+    dead      int  null
+);
+
+create table hospitalmanage
+(
+    id               varchar(10)  null,
+    name             varchar(100) null,
+    city             varchar(40)  null,
+    district         varchar(40)  null,
+    capasity         int          null,
+    director         varchar(40)  null,
+    directorContact  varchar(15)  null,
+    hospitalContact1 varchar(15)  null,
+    hospitalContact2 varchar(15)  null,
+    fax              varchar(20)  null,
+    email            varchar(50)  null
+);
+
+create table qurantioncentermanage
+(
+    id             varchar(10)  null,
+    name           varchar(100) null,
+    city           varchar(40)  null,
+    district       varchar(40)  null,
+    capasity       int          null,
+    head           varchar(40)  null,
+    headContact    varchar(15)  null,
+    centerContact1 varchar(15)  null,
+    centerContact2 varchar(15)  null,
+    fax            varchar(20)  null,
+    email          varchar(50)  null
+);
+
+create table users
+(
+    name      varchar(70)  null,
+    phoneNo   varchar(11)  null,
+    email     varchar(70)  null,
+    passsword varchar(100) null,
+    role      varchar(30)  null,
+    userName  varchar(20)  null
+);
