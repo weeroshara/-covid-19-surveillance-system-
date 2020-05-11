@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.DashBord_Control">
+   <children>
+      <Label layoutX="343.0" layoutY="33.0" text="DASHBOARD">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="globalImage" fitHeight="150.0" fitWidth="156.0" layoutX="40.0" layoutY="74.0" onMouseClicked="#globalImageOnAction" onMouseEntered="#globalImageOnMouseEnter" onMouseExited="#globalImageOnMouseExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/glb.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="centerImage" fitHeight="150.0" fitWidth="156.0" layoutX="420.0" layoutY="81.0" onMouseClicked="#centerImageOnAction" onMouseEntered="#centerImageOnMouseEnter" onMouseExited="#userImageOnMouseExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/centers.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="userImage" fitHeight="169.0" fitWidth="159.0" layoutX="617.0" layoutY="95.0" onMouseClicked="#userImageOnAction" onMouseEntered="#userImageOnMouseEnter" onMouseExited="#hospitalImageOnMouseExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/person.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hospitalImage" fitHeight="150.0" fitWidth="156.0" layoutX="209.0" layoutY="88.0" onMouseClicked="#hospitalImageOnAction" onMouseEntered="#hospitalImageOnMouseEnter" onMouseExited="#centerImageOnMouseExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/hospital.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcomeLable" layoutX="326.0" layoutY="303.0" text="Welcome to system!">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="globleLable" layoutX="326.0" layoutY="303.0" text="Global Covid Status">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="centerLable" layoutX="328.0" layoutY="303.0" text="Centers Covid Status">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="hospitalLable" layoutX="320.0" layoutY="303.0" text="Hospital Covid Status">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="userLable" layoutX="347.0" layoutY="303.0" text="Users Status">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="signOut" layoutX="687.0" layoutY="18.0" onAction="#signOutOnAction" style="-fx-border-color: #110ada;" text="Sign Out" textFill="#110ada" />
+   </children>
+</AnchorPane>
